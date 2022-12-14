@@ -40,7 +40,7 @@ int main(void)
 		initial0s = numLength(mx) - 1 - numLength(f1);
 		while (f10 > 0 && initial0s > 0)
 		{
-			printf("%1", 0);
+			printf("%1u", 0);
 				initial0s--;
 		}
 		printf("%lu", f1);
