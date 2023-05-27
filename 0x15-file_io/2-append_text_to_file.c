@@ -9,18 +9,18 @@
  */
 int append_text_to_file(const char *filename, char *text_content)
 {
-	int p, v, len = 0;
+	int p, v, lens = 0;
 
 	if (filename == NULL)
 		return (-1);
 
 	if (text_content != NULL)
 	{
-		for (len = 0; text_content[len];)
-			len++;
+		for (lens = 0; text_content[lens];)
+			lens++;
 	}
 	p = open(filename, O_WRONLY | O_APPEND);
-	v = write(o, text_content, len);
+	v = write(p, text_content, lens);
 
 	if (p == -1 || v == -1)
 		return (-1);
